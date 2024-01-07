@@ -1,1 +1,1 @@
-# zakat-react-router-dom
+# zakatCalculator-react-router-dom
