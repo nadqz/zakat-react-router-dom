@@ -1,0 +1,132 @@
+.container {
+    padding: 10rem 10rem 0 10rem;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+  }
+  
+  .sidemenu {
+    background: rgba(0, 0, 0, .8);
+    width: 25%;
+    height: 100vh;
+    color: #fff;
+    margin-right: 2rem;
+  }
+  
+  .sidemenu ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .sidemenu li {
+    margin: 0 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .sidemenu a {
+    font-weight: 600;
+    display: flex;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .sidemenu a:hover{
+    background: rgb(150, 135, 105, .7);
+  }
+
+  .sidemenu h1 {
+    font-size: 3rem;
+    color: rgb(150, 135, 105);
+    margin: 2rem 1rem 3rem 1rem;
+  }
+  
+  .content-penghasilan {
+    background: rgba(255, 255, 255, .05);
+    flex: 1;
+    padding: 0 0rem;
+  }
+
+  .content-penghasilan h1 {
+    margin: 1rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(150, 135, 105);
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, .1);
+    margin: 10px 0;
+  }
+  
+  .penghasilan {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .content-penghasilan h2 {
+    margin: 1rem 2rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .form-penghasilan {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    font-size: 16px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .data-penghasilan-kiri {
+    text-align: left;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .data-penghasilan-kiri p {
+    color: rgb(150, 135, 105);
+    font-weight: 500;
+    margin: 10px;
+  }
+  
+  .data-penghasilan-kanan {
+    text-align: right;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .data-penghasilan-kanan p{
+    font-weight: 500;
+    margin: 10px;
+  }
+
+  .button-peng {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  .button-peng button {
+    position: relative;
+    font-size: 16px;
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    border: 2px solid rgb(150, 135, 105);
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 1rem 10px 0 0;
+  }
+  
+  .butto-peng button:hover {
+    background-color: rgb(150, 135, 105);
+  }
+  

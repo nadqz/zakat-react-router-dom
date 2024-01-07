@@ -1,0 +1,27 @@
+.kalkulator-img {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.kalkulator-img::before {
+    content: '';
+    background: url('../assets//kalkulator.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+@media screen and (max-width:640px) {
+    .kalkulator-img {
+        height: 30vh;
+
+    }
+}
+

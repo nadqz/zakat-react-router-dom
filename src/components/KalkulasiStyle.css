@@ -1,0 +1,281 @@
+* {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.kalkulator {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    width: auto;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.kalkulator-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.kalkulator-left {
+    margin-right: 5rem;
+    margin-left: 0;
+    height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.kalkulator-left h1{
+    font-family: 'Cormorant', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.kalkulator-left h2 {
+    margin-top: 3rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(147,132,103);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.kalkulator-left h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.kalkulator-left p {
+    margin-top: 0.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.kalkulator-right {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 2.5rem;
+    padding: 3.5rem;
+}
+
+label {
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    display: block;
+    margin: 1rem 0 10px 0;
+}
+
+.form-control {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(255, 255, 255, .1);
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.date-control {
+  text-align: center;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .1);
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    padding: 8px 8.5rem;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 10px 15px;
+    font-size: 1rem;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgb(147,132,103);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: rgb(147,132,103);
+}
+
+.popup {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    margin: 0rem 10rem 0 0rem;
+    transform: translate(-50%, -50%);
+    background: rgb(140, 147, 103, .9);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .popup-zakat {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-zakat p {
+    font-size: 2rem;
+    padding: 2rem 2rem 1.5rem;
+  }
+
+  .popup-zakat h3 {
+    color: rgb(204,0,0);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 3.5rem 1rem;
+  }
+  
+  .popup-button {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 2rem;
+    padding: 10px 50px;
+    border: 1px solid white;
+    margin: 1rem 1rem 3rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .popup-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s;
+  }
+
+  .mal-left {
+    margin-right: 5rem;
+    margin-left: 0;
+    height: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19rem;
+}
+
+.mal-left h1{
+    font-family: 'Cormorant', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.mal-left h2 {
+    margin-top: 3rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(147,132,103);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.mal-left h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mal-left p {
+    margin-top: 0.5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+  
+
+@media screen and (max-width:640px) {
+    * {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    .kalkulator {
+        padding: 3rem 2rem 4.5rem;
+    }
+    
+    .kalkulator-container {
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
+    .kalkulator-left {
+        margin: 3rem 0 4rem 0;
+    }
+
+    .kalkulator-right {
+        margin: 0;
+        padding: 3rem 2rem 2rem 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .button {
+      margin: 2rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .popup {
+        width: 70%;
+        height: auto;
+        border-radius: 2rem;
+      }
+    
+      .popup-zakat {
+        padding: 0;
+        margin: 1.5rem 1.5rem;
+      }
+    
+      .popup-zakat p {
+        font-weight: 500;
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .popup-zakat h3 {
+        margin: 1.5rem 0 3rem 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      
+      .popup button {
+        margin: 2rem 0 0 0;
+        position: relative;
+      }
+
+      .mal-left {
+        margin: 0;
+        padding: 3rem 1rem 6rem 1rem;
+      }
+}

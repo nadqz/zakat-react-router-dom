@@ -1,0 +1,27 @@
+.penerima-img {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.penerima-img::before {
+    content: '';
+    background: url('../assets/penerima.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+@media screen and (max-width:640px) {
+    .penerima-img {
+        height: 30vh;
+
+    }
+}
+
